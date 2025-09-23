@@ -253,16 +253,16 @@ jobs:
         # 基础环境变量
         cf set-env ${{ env.APP_NAME }} NAME "SAP"
         cf set-env ${{ env.APP_NAME }} UUID "${{ secrets.UUID8264 }}"
-        cf set-env ${{ env.APP_NAME }} NEZHA_SERVER "${{ secrets.NEZHA_SERVER8264 }}"
-        cf set-env ${{ env.APP_NAME }} NEZHA_PORT "${{ secrets.NEZHA_PORT8264 }}"
-        cf set-env ${{ env.APP_NAME }} NEZHA_KEY "${{ secrets.NEZHA_KEY8264 }}"
+        cf set-env ${{ env.APP_NAME }} NEZHA_SERVER "${{ secrets.NEZHA_SERVER }}"
+        cf set-env ${{ env.APP_NAME }} NEZHA_PORT "${{ secrets.NEZHA_PORT }}"
+        cf set-env ${{ env.APP_NAME }} NEZHA_KEY "${{ secrets.NEZHA_KEY }}"
         cf set-env ${{ env.APP_NAME }} ARGO_DOMAIN "${{ secrets.ARGO_DOMAIN8264 }}"
         cf set-env ${{ env.APP_NAME }} ARGO_AUTH "${{ secrets.ARGO_AUTH8264 }}"
-        cf set-env ${{ env.APP_NAME }} SUB_PATH "${{ secrets.SUB_PATH8264 }}"
+        cf set-env ${{ env.APP_NAME }} SUB_PATH "${{ secrets.SUB_PATH }}"
         cf set-env ${{ env.APP_NAME }} CFIP "${{ secrets.CFIP || 'cf.877774.xyz' }}"
         cf set-env ${{ env.APP_NAME }} CFPORT "${{ secrets.CFPORT }}"
-        cf set-env ${{ env.APP_NAME }} CHAT_ID "${{ secrets.CHAT_ID8264 }}"
-        cf set-env ${{ env.APP_NAME }} BOT_TOKEN "${{ secrets.BOT_TOKEN8264 }}"
+        cf set-env ${{ env.APP_NAME }} CHAT_ID "${{ secrets.CHAT_ID }}"
+        cf set-env ${{ env.APP_NAME }} BOT_TOKEN "${{ secrets.BOT_TOKEN }}"
 
         # 可选：从文件读取环境变量(如果存在)
         if [ -f .env ]; then
